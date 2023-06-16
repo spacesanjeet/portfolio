@@ -16,6 +16,7 @@ header {
 h1 {
   font-size: 2em;
   margin-top: 0;
+  color: #333333;
 }
 
 nav {
@@ -28,10 +29,12 @@ nav a {
   display: block;
   padding: 10px 20px;
   text-decoration: none;
+  color: #333333;
 }
 
 nav a:hover {
   background-color: #eeeeee;
+  color: #ffffff;
 }
 
 /* Main */
@@ -46,6 +49,7 @@ section {
 
 h2 {
   font-size: 1.5em;
+  color: #333333;
 }
 
 p {
@@ -62,4 +66,20 @@ footer {
 
 p {
   margin-bottom: 0;
+}
+
+/* Buttons */
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #337ab7;
+  color: #ffffff;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #2e6da4;
 }
