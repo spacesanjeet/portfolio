@@ -174,3 +174,18 @@ footer {
   color: #fff;
   text-align: center;
 }
+
+/* Add styles for dark mode */
+.dark-mode {
+  background-color: #222;
+  color: #fff;
+}
+
+/* Add styles for dark mode toggle */
+.dark-mode-toggle label {
+  background-color: #555;
+}
+
+.dark-mode-toggle label:before {
+  transform: translateX(20px);
+}
