@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio</title>
-   <link href="./index.css" rel="stylesheet"/>
+  <link href="index.css" rel="stylesheet"/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
@@ -13,6 +14,8 @@
       <div class="logo">
         <h1>My Portfolio</h1>
       </div>
+      <input type="checkbox" id="menuToggle">
+      <label for="menuToggle" class="menu-icon">&#9776;</label>
       <ul class="menu">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
@@ -26,43 +29,42 @@
     </div>
   </header>
 
-    <main>
-      <section id="home">
-        <h1>Welcome to My Portfolio</h1>
-        <p>Hi, I'm Sanjeet Patel, a freelance content writer and editor.</p><br>
-      </section>
+  <main>
+    <section id="home">
+      <h1>Welcome to My Portfolio</h1>
+      <p>Hi, I'm Sanjeet Patel, a freelance content writer and editor.</p>
+    </section>
 
-      <section id="about">
-        <h2>About Me</h2>
-        <p>I am passionate about writing and have written hundreds of news articles for companies such as Drozee and Asiana Times. I have also written hundreds of articles as a ghostwriter that include researching about the topic, framing a draft along with the template and readying the final article with working links and images. I have also proofreaded and edited articles along the way and have also prepared a draft for a marketing book for my college project.</p><br>
-      </section>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I am passionate about writing and have written hundreds of news articles for companies such as Drozee and Asiana Times. I have also written hundreds of articles as a ghostwriter that include researching about the topic, framing a draft along with the template and readying the final article with working links and images. I have also proofreaded and edited articles along the way and have also prepared a draft for a marketing book for my college project.</p>
+    </section>
 
-      <section id="portfolio">
-        <h2>Experience</h2>
-        <div class="project">
-          <h3>Asisna Times</h3>
-          <p>I worked at Asiana Times for 2 months during August and September 2022 and during this period was tasked to complete 24 articles per month. I exceeded the expectations by writing more tha 60 long-form articles covering news from sports such as Tennis, Football, and Cricket. This work required dedication to research to craft and convey details in a proper manner and in the end I was able to deliver high quality articles that drove traffic to the website and earned me an letter of recommendation from the company at the end of my employment as an intern.</p>
-          <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQoAZ3n5bxqmcndNbNkauo4oylvZpWuJ6t0P9DzNnYTbvyVIOkDakAKvzrKE779Ky9rjIuoqsAsUOfg/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" width="800" height="400"></iframe>
-        </div>
-      </section>
+    <section id="portfolio">
+      <h2>Experience</h2>
+      <div class="project">
+        <h3>Asiana Times</h3>
+        <p>I worked at Asiana Times for 2 months during August and September 2022 and during this period was tasked to complete 24 articles per month. I exceeded the expectations by writing more tha 60 long-form articles covering news from sports such as Tennis, Football, and Cricket. This work required dedication to research to craft and convey details in a proper manner and in the end I was able to deliver high quality articles that drove traffic to the website and earned me an letter of recommendation from the company at the end of my employment as an intern.</p>
+        <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQoAZ3n5bxqmcndNbNkauo4oylvZpWuJ6t0P9DzNnYTbvyVIOkDakAKvzrKE779Ky9rjIuoqsAsUOfg/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" width="100%" height="400"></iframe>
+      </div>
+    </section>
 
-      <section id="contact">
-        <h2>Contact Me</h2>
-        <form>
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required>
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
 
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
 
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" required></textarea>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
 
-          <button type="submit" class="btn">Send Message</button>
-        </form>
-      </section>
-    </main>
-  </div>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </section>
+  </main>
 
   <footer>
     <p>&copy; 2023 Sanjeet Patel</p>
