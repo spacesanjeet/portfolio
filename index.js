@@ -8,26 +8,26 @@ const menu = document.getElementById('menu');
 
 // Function to toggle dark mode
 function toggleDarkMode() {
-  if (darkModeToggle.checked) {
-    document.body.classList.add('dark-mode');
-  } else {
-    document.body.classList.remove('dark-mode');
-  }
+  document.body.classList.toggle('dark-mode');
 }
 
-// Function to toggle mobile menu
+// Function to toggle menu
 function toggleMenu() {
   menu.classList.toggle('active');
 }
 
-// Set the initial dark mode based on the user's preference
+// Initialize dark mode based on user preference
 if (prefersDarkMode) {
+  document.body.classList.add('dark-mode');
   darkModeToggle.checked = true;
-  toggleDarkMode();
 }
 
-// Listen for changes to the dark mode toggle
-darkModeToggle.addEventListener('change', toggleDarkMode);
+// Add event listener to the dark mode toggle
+darkModeToggle.addEventListener('change', () => {
+  toggleDarkMode();
+});
 
-// Listen for clicks on the menu icon
-menuIcon.addEventListener('click', toggleMenu);
+// Add event listener to the menu icon
+menuIcon.addEventListener('click', () => {
+  toggleMenu();
+});
