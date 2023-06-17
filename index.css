@@ -86,7 +86,7 @@ nav ul li a:hover {
 /* Style the main content */
 /* for small screen less than 768px (small phone to large screen phone) */
 main {
-  padding: 50px;
+  padding: 8px;
   width: 100%;
   margin: 0 auto;
 }
@@ -94,6 +94,7 @@ main {
 /* for screen bigger than 768px (tablet up to 4K desktop) */
 @media (min-width: 768px) {
   main {
+    padding: 48px;
     width: calc(100% - 250px);
   }
 }
