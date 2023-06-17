@@ -1,4 +1,6 @@
+body {
 font-family: 'Inter', sans-serif;
+}
 /* Reset default browser styles */
 * {
   margin: 0;
